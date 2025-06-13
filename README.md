@@ -40,38 +40,46 @@ This application demonstrates how to manage related data (Player with related de
 
 
 ---
-
 ## 📁 Project Structure
-📁 PlayerManagement/
-  📁 Controllers/
-    HomeController.cs
-    PlayersController.cs
-  📁 Migrations/
-    20250518214449_init.cs
-    AppDbContextModelSnapshot.cs
-  📁 Models/
-    Player.cs
-  📁 ViewModels/
-    PlayerViewModels.cs
-  📁 Views/
-    _ViewImports.cshtml
-    ViewStart.cshtml
-    View.cshtml
-    📁 Home/
-      Index.cshtml
-    📁 Players/
-      Index.cshtml
-    📁 Shared/
-      _AddSkill.cshtml
-      CreatePlayer.cshtml
-      _EditPlayer.cshtml
-    _Layout.cshtml
-  appsettings.json
-  appsettings.Development.json
-  libman.json
-  Program.cs
-  launchSettings.json
-  📁 wwwroot/
-    📁 bootstrap/
-    📁 images/
-    📁 jquery/
+The solution follows a clean separation of layers for maintainability and scalability:
+
+- **PlayerManagement/**
+  - **wwwroot/**
+    - `bootstrap`
+    - `images/`
+    - `jquery`
+  - **Controllers/**
+    - `HomeController.cs`
+    - `PlayersController.cs`
+  - **Migrations/**
+    - `20250518214449_init.cs`
+    - `AppDbContextModelSnapshot.cs`
+  - **Models/**
+     - `Player.cs`
+     - `PlayerSkill`
+     - `Citizenship`
+  - **ViewModels/**
+    - `PlayerViewModels.cs`
+  - **Views/**
+    - `_ViewImports.cshtml`
+    - `ViewStart.cshtml`
+    - `View.cshtml`
+    - `PlayerList.rpt`
+  - **Views/Home**
+    - `Index.cshtml`
+  - **Views/Players**
+    - `Index.cshtml`
+  - **Views/Shared**
+    - `_AddSkill.cshtml`
+    - `CreatePlayer.cshtml`
+    - `_EditPlayer.cshtml`
+    - `_Layout.cshtml`
+  - **images/**
+    - `noimage.jpg` – Placeholder image for players with no photo.
+  - **appsettings.json**
+  - **appsettings.Development.json**
+  - **libman.json** – Local SQL Server database file.
+  - **Program.cs** – Entry point of the application.
+
+---
+
