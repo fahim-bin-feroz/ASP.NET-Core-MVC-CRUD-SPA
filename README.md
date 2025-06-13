@@ -78,8 +78,8 @@ The solution follows a clean separation of layers for maintainability and scalab
     - `noimage.jpg` – Placeholder image for players with no photo.
   - **appsettings.json**
   - **appsettings.Development.json**
-  - **libman.json** – Local SQL Server database file.
-  - **Program.cs** – Entry point of the application.
+  - **libman.json**
+  - **Program.cs**
 
 ---
 
